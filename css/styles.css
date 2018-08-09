@@ -1,0 +1,270 @@
+body {
+  font-size: 16px;
+  color: #fff;
+  background-color: #3cba54;
+  font-family: 'Open Sans', sans-serif;
+}
+
+/** HEADER **/
+#header-nav {
+  background-color: #4885ed;
+  border-radius: 0;
+  border: 0;
+}
+
+#logo-img {
+  background: url('../images/camp-logo_large.jpg') no-repeat;
+  width: 150px;
+  height: 150px;
+  margin: 10px 15px 10px 0;
+}
+
+.navbar-brand {
+  padding-top: 25px;
+}
+
+.navbar-brand h1 { /* Camp Name */
+  font-family: 'Open Sans', sans-serif;
+  color: #000;
+  font-size: 1.5em;
+  text-transform: uppercase;
+  font-weight: bold;
+  text-shadow: 1px 1px 1px #DCDCDC;
+  margin-top: 0;
+  margin-bottom: 0;
+  line-height: .75;
+}
+
+.navbar-brand a:hover, .navbar-brand a:focus {
+  text-decoration: none;
+}
+
+.navbar-brand p { /* CPR Cert */
+  color: #000;
+  text-transform: uppercase;
+  font-size: .8em;
+  margin-top: 15px;
+}
+
+#nav-list {
+  margin-top: 10px;
+}
+
+#nav-list a {
+  color: #951C49;
+  text-align: center;
+}
+
+#nav-list a:hover {
+  background: #E7E7E7;
+}
+
+#nav-list a span {
+  font-size: 1.8em;
+}
+
+#phone {
+  margin-top: 5px;
+}
+
+#phone a { /* Phone number */
+  text-align: right;
+  padding-bottom: 0;
+}
+
+.navbar-header button.navbar-toggle, .navbar-header .icon-bar {
+  border: 1px solid #44B4E9;
+}
+
+.navbar-header button.navbar-toggle {
+  clear: both;
+  margin-top: -30px;
+}
+/* END HEADER */
+
+
+/* FOOTER */
+.panel-footer {
+  margin-top: 30px;
+  padding-top: 35px;
+  padding-bottom: 30px;
+  background-color: #222;
+  border-top: 0;
+}
+
+.panel-footer div.row {
+  margin-bottom: 35px;
+}
+
+#hours, #address {
+  line-height: 2;
+}
+
+#hours > span, #address > span {
+  font-size: 1.3em;
+}
+
+#hours p {
+  color: #557c3e;
+  font-size: .8em;
+  line-height: 1.8;
+}
+
+#testimonials {
+  font-style: italic;
+}
+
+#testimonials p:nth-child(2) {
+  margin-top: 25px;
+}
+/* END FOOTER */
+
+/* HOME PAGE */
+.container .jumbotron {
+  box-shadow: 0 0 50px #44B4E9;
+  border: 2px solid #44B4E9;
+}
+
+#enroll-tile, #apply-tile, #location-tile {
+  height: 250px;
+  width: 100%;
+  margin-bottom: 15px;
+  position: relative;
+  border: 2px solid #3F0C1F;
+  overflow: hidden;
+}
+
+#enroll-tile {
+  background: url('../images/sample.jpg') no-repeat;
+  background-position: center;
+}
+
+#apply-tile {
+  background: url('../images/sample.jpg') no-repeat;
+  background-position: center;
+}
+
+#enroll-tile:hover, #apply-tile:hover, #location-tile:hover {
+  box-shadow: 0 1px 5px 1px #F1A2ED;
+}
+
+
+#enroll-tile span, #apply-tile span, #location-tile span {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  text-align: center;
+  font-size: 1.6em;
+  text-transform: uppercase;
+  background-color: #000;
+  color: #fff;
+  opacity: .8;
+}
+/* END HOME PAGE */
+
+
+
+/********** Large devices only **********/
+@media (min-width: 1200px) {
+  .container .jumbotron {
+    background: url('../images/jumbotron_1200.jpg') no-repeat;
+    height: 788px;
+  }
+}
+
+/********** Medium devices only **********/
+@media (min-width: 992px) and (max-width: 1199px) {
+  /* Header */
+  #logo-img {
+    background: url('../images/camp-logo_medium.jpg') no-repeat;
+    width: 100px;
+    height: 100px;
+    margin: 5px 5px 5px 0;
+  }
+  /* End Header */
+
+  /* Home Page */
+  .container .jumbotron {
+    background: url('../images/jumbotron_992.jpg') no-repeat;
+    height: 651px;
+  }
+  /* End Home Page */
+}
+
+/********** Small devices only **********/
+@media (min-width: 768px) and (max-width: 991px) {
+  /* Home Page */
+  .container .jumbotron {
+    background: url('../images/jumbotron_768.jpg') no-repeat;
+    height: 504px;
+  }
+  /* End Home Page */
+}
+
+/********** Extra small devices only **********/
+@media (max-width: 767px) {
+  /* Header */
+  .navbar-brand {
+    padding-top: 10px;
+    height: 80px;
+  }
+
+  .navbar-brand h1 { /* Restaurant name */
+    padding-top: 10px;
+    font-size: 5vw; /* 1vw = 1% of viewport width */
+  }
+
+  .navbar-brand p { /* Kosher cert */
+    font-size: .6em;
+    margin-top: 12px;
+  }
+
+  #collapsable-nav a { /* Collapsed nav menu text */
+    font-size: 1.2em;
+  }
+  #collapsable-nav a span { /* Collapsed nav menu glyph */
+    font-size: 1em;
+    margin-right: 5px;
+  }
+
+  #call-btn > a {
+    font-size: 1.5em;
+    display: block;
+    margin: 0 20px;
+    padding: 10px;
+    border: 2px solid #000;
+    background-color: #44B4E9;
+    color: #000;
+  }
+
+
+  /* End Header */
+
+  /* Footer */
+  .panel-footer section {
+    margin-bottom: 30px;
+    text-align: center;
+  }
+
+  .panel-footer section:nth-child(3) {
+    margin-bottom: 0; /* margin already exists on the whole row */
+  }
+
+  .panel-footer section hr {
+    width: 50%;
+  }
+  /* End Footer */
+
+  /* Home Page */
+  .container .jumbotron {
+    margin-top: 30px;
+    padding: 0;
+  }
+
+  #enroll-tile, #apply-tile {
+    width: 360px;
+    margin: 0 auto 15px;
+  }
+  /* End Home Page */
+}
