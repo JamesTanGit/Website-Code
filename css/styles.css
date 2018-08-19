@@ -163,6 +163,49 @@ body {
 }
 /* END HOME PAGE */
 
+/* ENROLL */
+.enroll-list li {
+  text-align: left;
+  line-height: 1.6;
+}
+/* END ENROLL */
+
+/* ABOUT */
+.category-tile {
+  position: relative;
+  border: 2px solid #000;
+  overflow: hidden;
+  width: 300px;
+  height: 400px;
+  margin: 0 auto 15px;
+}
+
+.category-tile span {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  text-align: center;
+  font-size: 1.2em;
+  text-transform: uppercase;
+  background-color: #000;
+  color: #fff;
+  opacity: .8;
+}
+
+.category-tile:hover {
+  box-shadow: 0 1px 5px 1px #ff9000;
+}
+
+#about-title {
+  margin-bottom: 50px;
+}
+/* END ABOUT */
+
+/* AWARDS */
+
+/* END AWARDS */
+
 /********** Large devices only **********/
 @media (min-width: 1200px) {
   .container .jumbotron {
