@@ -241,6 +241,12 @@ body {
     height: 504px;
   }
   /* End Home Page */
+
+  /* About Page */
+  .explanation {
+    margin-bottom: 12px;
+  }
+  /* End About Page */
 }
 
 /********** Extra small devices only **********/
@@ -308,4 +314,10 @@ body {
     margin: 0 auto 15px;
   }
   /* End Home Page */
+
+  /* About Page */
+  .explanation {
+    margin-bottom: 12px;
+  }
+  /* End About Page */
 }
