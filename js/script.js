@@ -1,3 +1,4 @@
+/*
 $(function () { // document.addEventListener("DOMContentLoaded")
 	$("#navbarToggle").blur(function (event) { // document.querySelector("#navbarToggle").addEventListener("blur")
 		var screenWidth = window.innerWidth;
@@ -6,3 +7,4 @@ $(function () { // document.addEventListener("DOMContentLoaded")
 		}
 	});
 });
+*/
