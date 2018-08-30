@@ -1,10 +1,8 @@
 document.querySelector(".button-finish").addEventListener("click", function () {
-	var self = this;
-  var name = "";
 
-  // Call the server to get the name
-  $ajaxUtils.sendGetRequest("/data/finish-welcome.txt", function (request) {
-    self.name = request.responseText;
-    document.querySelector("#content").innerHTML = self.name;
+  // Call the server to get the message
+  $ajaxUtils.sendGetRequest("/data/finish-welcome.json", function (res) {
+    var message = res.string;
+    document.querySelector("#content").innerHTML = message;
   });
 });
